@@ -1,0 +1,3575 @@
+{
+"@context": {
+    "@base": "https://ref.gs1.org/glossary/",
+    "@vocab": "https://ref.gs1.org/glossary/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    
+    "id": "@id",
+    "term": "rdfs:label",
+    "definition": "rdfs:comment",
+    "abbreviation": "skos:altLabel",
+    "date": {
+      "@id": "dcterms:date",
+      "@type": "xsd:date"
+    },
+    "sourceName": "dcterms:source",
+    "sourceURL": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "img": {
+      "@id": "schema:image",
+      "@type": "@id"
+    },
+    "examples": {
+      "@id": "skos:example",
+      "@container": "@list"
+    },
+    "links": {
+      "@id": "rdfs:seeAlso",
+      "@container": "@set",
+      "@context": {
+        "url": "@id"
+      }
+    },
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "label": "rdfs:label",
+    "crossRefs": {
+      "@id": "skos:related",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "isTypeOf": {
+      "@id": "skos:broader",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "isPartOf": {
+      "@id": "dcterms:isPartOf",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    
+    "glossaryData": "@graph",
+    "extractedGlossaryData": {
+      "@id": "dcterms:hasPart",
+      "@container": "@set"
+    }
+  },
+  "glossaryData": [
+    {
+      "id": "https://ref.gs1.org/glossary",
+      "sourceName": "GS1 Gen Specs glossary",
+      "extractedGlossaryData": [
+        {
+          "term": "acceptance criteria",
+          "definition": "An allowance for a small measurement variation between commercial verifiers or operators during barcode verification testing.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "acceptance_criteria"
+        },
+        {
+          "term": "add-on symbol",
+          "definition": "A barcode used to encode information supplementary to that in the main EAN/UPC barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "add-on_symbol"
+        },
+        {
+          "term": "aggregated packaging",
+          "definition": "Any packaging containing more than one unit packet of tobacco products. For GS1, this may be either a trade item grouping or logistics unit.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aggregated_packaging"
+        },
+        {
+          "term": "aggregate Unique Identifier",
+          "abbreviation": "aUI",
+          "definition": "An alphanumeric code (maximum 100 characters) used to identify aggregated packaging (e.g., cases, pallets) containing more than one unit packet of tobacco products",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aui"
+        },
+        {
+          "term": "AIDC data carrier",
+          "definition": "Generic term for a barcode, RFID tag or NFC tag; a means of physically affixing machine-readable data to a physical entity.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aidc_data_carrier"
+        },
+        {
+          "term": "AIDC media",
+          "definition": "The specific form of object/entity where a GS1 AIDC data carrier is displayed.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aidc_media"
+        },
+        {
+          "term": "AIDC media type",
+          "definition": "The code list for objects/entities (e.g., patient wristband or staff ID card) that displays or carries a GS1 AIDC data carrier.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aidc_media_type"
+        },
+        {
+          "term": "AIDC media type value",
+          "definition": "A predefined two-digit numeric code list value used to signify the AIDC media type (e.g., ID = 10, patient wristband = 01).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aidc_media_type_value"
+        },
+        {
+          "term": "AIM DotCode",
+          "definition": "A two-dimensional barcode symbology rendered by printing dots per the AIM DotCode Specification.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aim_dotcode"
+        },
+        {
+          "term": "allocation",
+          "definition": "The association of an issued GS1 Prefix, GS1 Company Prefix, or GS1 identification key to its corresponding entity or object in accordance with the GS1 rules and policies.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "allocation"
+        },
+        {
+          "term": "alphanumeric",
+          "definition": "A character set that contains alphabetic characters (letters), numeric digits (numbers) and other characters, such as punctuation marks.",
+          "links": [],
+          "examples": [
+            "letters",
+            "numbers",
+            "punctuation marks"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "alphanumeric"
+        },
+        {
+          "term": "aperture",
+          "definition": "A physical opening that is part of the optical path in a device such as a scanner, photometer, or camera. Most apertures are circular, but they may be rectangular or elliptical.",
+          "links": [],
+          "examples": [
+            "circular",
+            "rectangular",
+            "elliptical"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aperture"
+        },
+        {
+          "term": "Application Standard Profile",
+          "abbreviation": "ASP",
+          "definition": "A template that records conformance requirements of existing and any future AIDC application standards, the normative decisions (MSWG, ISO, Regulation, …), maintains centralisation of cross-application rules and related technical specifications.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "asp"
+        },
+        {
+          "term": "asset type",
+          "definition": "A component of the Global Returnable Asset Identifier (GRAI), assigned by the asset owner or manager, in order to create a unique GRAI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "asset_type"
+        },
+        {
+          "term": "attribute",
+          "definition": "Additional information about an entity identified with a GS1 identification key.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "attribute"
+        },
+        {
+          "term": "autodiscrimination",
+          "definition": "The capability of a reader to automatically recognise and decode multiple barcode symbologies.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "autodiscrimination"
+        },
+        {
+          "term": "automatic identification and data capture",
+          "abbreviation": "AIDC",
+          "definition": "A technology used to automatically capture data. AIDC technologies include barcodes, smart cards, biometrics and RFID.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "aidc"
+        },
+        {
+          "term": "auxiliary patterns",
+          "definition": "Components of the EAN/UPC symbology. The centre guard bar pattern, the left guard bar pattern and the right guard bar pattern are examples of these.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "auxiliary_patterns",
+          "img": "glossaryImages:AuxiliaryPatterns.svg"
+        },
+        {
+          "term": "bar gain/loss",
+          "definition": "The increase/decrease in bar width due to effects of the reproduction and printing processes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "bar_gain_loss"
+        },
+        {
+          "term": "barcode",
+          "definition": "A symbol that encodes data into a machine readable pattern of adjacent, varying width, parallel, rectangular or square dark and light spaces. The term barcode is inclusive of all linear and two-dimensional (2D) versions.",
+          "links": [],
+          "examples": [
+            "linear",
+            "two-dimensional"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "barcode"
+        },
+        {
+          "term": "barcode verification",
+          "definition": "The assessment of the printed quality of a barcode based on ISO/IEC standards using ISO/IEC compliant barcode verifiers.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "barcode_verification"
+        },
+        {
+          "term": "base unit",
+          "definition": "In a hierarchy of trade item groupings, the consumer trade item level or unit of use.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "base_unit"
+        },
+        {
+          "term": "Basic Unique Device Identifier – Device Identifier",
+          "abbreviation": "BUDI-DI",
+          "definition": "A unique identifier specific to a medical device family. It is represented by GS1’s Global Model Number (GMN).",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/",
+              "label": "EU medical device regulation 2017/745"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "budi-di"
+        },
+        {
+          "term": "batch/lot",
+          "definition": "Associates an item with information the manufacturer considers relevant for traceability of the trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "batch_lot"
+        },
+        {
+          "term": "bearer bars",
+          "definition": "Bar abutting the tops and bottoms of the bars in a barcode or a frame surrounding the entire symbol, intended to equalise the pressure exerted by the printing plate over the entire surface of the symbol and/or to prevent a partial scan by the barcode reader.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "bearer_bars",
+          "img": "glossaryImages:BearerBars.svg"
+        },
+        {
+          "term": "brand owner",
+          "definition": "The organisation that owns the specifications of a trade item, regardless of where and by whom it is manufactured. The brand owner is normally responsible for the management of the Global Trade Item Number (GTIN).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "brand_owner"
+        },
+        {
+          "term": "Character Set 39",
+          "definition": "A subset of characters found in ISO 646: Unique Graphic Character Allocations which includes numeric, alphabetic upper-case, and the characters “#”, “-“ and “/”.",
+          "links": [],
+          "examples": [
+            "#",
+            "-",
+            "/"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "character_set_39"
+        },
+        {
+          "term": "Character Set 64 (file-safe / URI-safe base64)",
+          "definition": "A subset of characters found in ISO 646: Unique Graphic Character Allocations and defined by section 5 of RFC4648 as a URI and filename safe base64 alphabet, which includes numeric, alphabetic upper-case and lower-case, plus the characters “-”, “_”. The “=” character is used as a special pad character and has no assigned value. The file-safe URI-safe base64 alphabet is used to represent binary data as compact alphanumeric strings, each character corresponding to a 6-bit value in the range 0-63.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "character_set_64_file-safe_uri-safe_base64"
+        },
+        {
+          "term": "Character Set 82",
+          "definition": "A subset of characters found in ISO 646: Unique Graphic Character Allocations which includes numeric, alphabetic upper-case and lower-case, plus twenty special characters but excluding “space”.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "character_set_82"
+        },
+        {
+          "term": "check digit",
+          "definition": "Numeric character calculated from data and appended as part of the data string to ensure that the data is correctly composed and transmitted.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "check_digit"
+        },
+        {
+          "term": "class level GS1 identifier",
+          "definition": "An identifier of entities which share common characteristics (e.g., all trade items allocated the same GTIN).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "class_level_gs1_identifier"
+        },
+        {
+          "term": "Code 128",
+          "definition": "A linear barcode symbology fully described in ISO/IEC 15417 of which GS1-128 is a subset.",
+          "links": [
+            {
+              "url": "https://www.iso.org/standard/87124.html",
+              "label": "ISO/IEC 15417:2007/Amd1:2026, Code 128 spec"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "code_128"
+        },
+        {
+          "term": "codeword",
+          "definition": "A symbol character value. An intermediate level of coding between source data and the graphical encodation in the symbol.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "codeword"
+        },
+        {
+          "term": "component/part",
+          "definition": "An item that is intended to undergo at least one further transformation process to create finished goods for the purpose of downstream consumption.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "component_part"
+        },
+        {
+          "term": "Component/Part Identifier",
+          "abbreviation": "CPID",
+          "definition": "The unique identifier for a component/part, comprising a GS1 Company Prefix and a component/part reference.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "cpid"
+        },
+        {
+          "term": "Composite Component",
+          "definition": "The stacked linear barcode component of a GS1 composite symbol.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "composite_component"
+        },
+        {
+          "term": "compound GS1 identifier",
+          "definition": "Two or more data elements that combine a simple GS1 identifier and GS1 identifier extension(s), that identifies entities at sub-class level or instance level, where no subset of those data elements taken by themselves would do so.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "compound_gs1_identifier"
+        },
+        {
+          "term": "concatenation",
+          "definition": "The representation of several element strings in one barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "concatenation"
+        },
+        {
+          "term": "Conformant",
+          "definition": "The state in which a system meets a specified standard.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "conformant"
+        },
+        {
+          "term": "consignment",
+          "definition": "A grouping of logistic or transport units assembled by a freight forwarder or carrier to be transported under one transport document (e.g., waybill).",
+          "links": [],
+          "examples": [
+            "waybill"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "consignment"
+        },
+        {
+          "term": "consumer product variant",
+          "abbreviation": "CPV",
+          "definition": "An alphanumeric attribute of a GTIN assigned to a retail consumer trade item variant for its lifetime.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "cpv"
+        },
+        {
+          "term": "country subdivision",
+          "definition": "Principle administrative divisions, or similar areas, of a country included in ISO 3166-1. Examples are a state in the US, a region in France, a canton in Switzerland.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "country_subdivision"
+        },
+        {
+          "term": "coupon",
+          "definition": "A voucher that can be redeemed at the point-of-sale for a cash value or free item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "coupon"
+        },
+        {
+          "term": "Coupon-12",
+          "definition": "Deprecated in favour of: RCN-12",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "coupon-12"
+        },
+        {
+          "term": "Coupon-13",
+          "definition": "Deprecated in favour of: RCN-13",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "coupon-13"
+        },
+        {
+          "term": "coupon issuer",
+          "definition": "Party issuing the coupons, bearing the commercial and financial responsibility for the coupons.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "coupon_issuer"
+        },
+        {
+          "term": "customer",
+          "definition": "The party that receives, buys, or consumes an item or service.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "customer"
+        },
+        {
+          "term": "data character",
+          "definition": "A single numeric digit, alphabetic character or punctuation mark, or control character, which represents meaningful information.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_character"
+        },
+        {
+          "term": "data element",
+          "definition": "One piece of information (e.g., GS1 informative data) or one identification component (e.g., simple GS1 identifier or GS1 identifier extension).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_element"
+        },
+        {
+          "term": "data element field",
+          "definition": "The data container (e.g., within a document or message or dataset) where a data element value is encoded, stored, queried, or transmitted.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_element_field"
+        },
+        {
+          "term": "data element qualifier",
+          "definition": "A set of characters that designate the meaning, character set, format and length of the data element value that it precedes or represents, as defined by the relevant technology e.g., GS1 Application Identifiers for implicit or explicit encoding in AIDC data carriers, data titles for physical labels or data base fields, GS1 Web Vocabulary properties for JSON/XML applications, etc.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_element_qualifier"
+        },
+        {
+          "term": "data element qualifier-value pair",
+          "definition": "Combination of a data element qualifier and data element value. Also known within technology specific standards as a name-value pair, key-value pair, property-value pair, attribute-value pair or a GS1 element string (which combines a GS1 Application Identifier and a GS1 Application Identifier data field).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_element_qualifier-value_pair"
+        },
+        {
+          "term": "Data element value",
+          "definition": "The characters that comprise a data element (e.g., ABC123, 220708, 117 Hopkins Street).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_element_value"
+        },
+        {
+          "term": "data field",
+          "definition": "A field that contains a GS1 identification key, an RCN, or attribute information.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_field"
+        },
+        {
+          "term": "Data Matrix (GS1 Digital Link URI)",
+          "definition": "Data Matrix encoding data using the uncompressed form of the GS1 Digital Link URI syntax.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_matrix_gs1_digital_link_uri",
+          "img": "glossaryImages:DataMatrixGS1DigitalLinkURI.svg"
+        },
+        {
+          "term": "Data Matrix symbology",
+          "definition": "A standalone, two-dimensional barcode symbology that is made up of square modules arranged within a perimeter finder pattern. Data Matrix using ECC 200 error correction is the only version that supports GS1 system identification keys, including the Function 1 Symbol Character (FNC1). Data Matrix symbols are read by two-dimensional imaging scanners or vision systems.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_matrix_symbology",
+          "img": "glossaryImages:DataMatrixSymbology_BarText.svg",
+          "isTypeOf": [
+            "2d"
+          ]
+        },
+        {
+          "term": "data titles",
+          "definition": "Data titles are the abbreviated descriptions of element strings which are used to support manual interpretation of barcodes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "data_titles"
+        },
+        {
+          "term": "digital coupon",
+          "definition": "A digital coupon is an electronic representation of a coupon, that is distributed and presented without manifesting as “paper” or in other hard-copy form, and that can be exchanged for a financial saving or for loyalty points when making a purchase.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "digital_coupon"
+        },
+        {
+          "term": "Digital Signature",
+          "abbreviation": "DigSig",
+          "definition": "A data construct for encoding a digital signature within a data carrier, providing a method to authenticate barcode and RFID data. It also provides a method to link the barcode and RFID data to the labelled/tagged object. The ISO/IEC 20248 data construct which contains a X.509 digital signature is known as a DigSig. \"digital signature\" in lower case refers to digital signatures in general, whilst “Digital Signature” with capitals, is a named thing with the specific meaning of “DigSig”.",
+          "links": [
+            {
+              "url": "https://www.iso.org/standard/81314.html",
+              "label": "ISO/IEC 20248"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "digsig"
+        },
+        {
+          "term": "digital signature",
+          "definition": "A compact fingerprint of data that supports tamper-detection and non-repudiation by the party who digitally signed the data. A digital signature is constructed by hashing the data then encrypting the hash using a private key. This enables independent verification by anyone, using the public key corresponding to the private key.NOTE: “digital signature” in lower case refers to digital signatures in general, whilst \"Digital Signature\" with capitals, is a named thing with the specific meaning of \"DigSig”.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "digital_signature"
+        },
+        {
+          "term": "direct mode",
+          "definition": "Mobile device information retrieval function when the barcode contains either the address (URL) of the content or service, or the content itself, in-line.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "direct_mode"
+        },
+        {
+          "term": "direct part marking",
+          "abbreviation": "DPM",
+          "definition": "The process of marking a symbol on an item using an intrusive or non-intrusive method.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "dpm"
+        },
+        {
+          "term": "direct print",
+          "definition": "A process in which the printing apparatus prints the symbol by making physical contact with a substrate (e.g., flexography, ink jet, dot peening).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "direct_print"
+        },
+        {
+          "term": "document type",
+          "definition": "A component of a Global Document Type Identifier (GDTI) assigned by the document issuer to create a unique GDTI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "document_type"
+        },
+        {
+          "term": "dynamic assortment",
+          "definition": "A trade item that comprises a variable composition of a fixed total count of two or more different trade items, each identified with a GTIN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "dynamic_assortment"
+        },
+        {
+          "term": "EAN/UPC symbology",
+          "definition": "A family of barcodes including EAN-8, EAN-13, UPC-A and UPC-E barcodes as well as the 2- and 5-digit add-ons. See also EAN-8 barcode, EAN-13 barcode, UPC-A barcode and UPC-E barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ean_upc_symbology"
+        },
+        {
+          "term": "EAN-13 barcode",
+          "definition": "A barcode of the EAN/UPC symbology that encodes GTIN-13 or RCN-13.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ean-13_barcode",
+          "img": "glossaryImages:EAN-13BarCode.svg"
+        },
+        {
+          "term": "EAN-8 barcode",
+          "definition": "A barcode of the EAN/UPC symbology that encodes GTIN-8 or RCN-8.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ean-8_barcode",
+          "img": "glossaryImages:EAN-8BarCode.svg"
+        },
+        {
+          "term": "economic operator",
+          "abbreviation": "EOID",
+          "definition": "An economic operator is a business or other organisation which supplies goods, works or services within the context of market operations. Related to requirement for EOID for each country in which a party operates a facility.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "eoid"
+        },
+        {
+          "term": "Electronic Data Interchange",
+          "abbreviation": "EDI",
+          "definition": "A set of global standards for electronic business messaging that allow for the automatic, electronic transmission of agreed business data directly between trading partners' computer applications",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "edi"
+        },
+        {
+          "term": "Electronic Health Record",
+          "abbreviation": "EHR",
+          "definition": "Information relevant to the wellness, health and healthcare of an individual, in computer-processable form and represented according to a standardized information model.",
+          "links": [
+            {
+              "url": "https://www.iso.org/standard/52823.html",
+              "label": "ISO 18308:2011 on electronic health records"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ehr"
+        },
+        {
+          "term": "Electronic Medical Record)",
+          "abbreviation": "EMR",
+          "definition": "A computerised system containing a collection of data and information related to the care rendered to an individual within a single healthcare organisation. EMR is often used interchangeably with EPR. Data contained within an EMR may be shared into an Electronic Health Record (EHR) as part of maintaining a complete record of care provided to an individual.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "emr"
+        },
+        {
+          "term": "Electronic Patient Record",
+          "abbreviation": "EPR",
+          "definition": "A computerised system containing a collection of data and information related to the care rendered to an individual within a single healthcare organisation. EPR is often used interchangeably with EMR. Data contained within an EPR may be shared into an Electronic Health Record (EHR) as part of maintaining a complete record of care provided to an individual.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "epr"
+        },
+        {
+          "term": "Electronic Product Code",
+          "abbreviation": "EPC",
+          "definition": "An identification scheme for universally identifying physical objects (e.g., trade items, assets and locations) via RFID tags and other means. The standardised EPC data consists of an EPC (or EPC Identifier) that uniquely identifies an individual object, as well as an optional filter value when judged to be necessary to enable effective and efficient reading of the EPC tags.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "epc"
+        },
+        {
+          "term": "EPC/RFID",
+          "definition": "RFID applications in which tags carry an EPC identifier and optional supplemental data, as defined in the GS1 EPC Tag Data Standard (TDS).An EPC/RFID tag must be a Gen2 RFID tag, either High Frequency (HF) as defined in Radio-Frequency Identity Protocols EPC Class-1 HF RFID Air Interface Protocol or Ultra High Frequency (UHF) as defined in EPC Radio-Frequency Identity Generation-2 UHF RFID Standard.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "epc_rfid"
+        },
+        {
+          "term": "element",
+          "definition": "A single bar or space of a linear barcode symbol.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "element"
+        },
+        {
+          "term": "EU 2018/574",
+          "definition": "A European Union Regulation on the traceability of tobacco products.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "eu_2018_574"
+        },
+        {
+          "term": "EUDAMED",
+          "definition": "European database on medical devices (EUDAMED)",
+          "links": [
+            {
+              "url": "https://health.ec.europa.eu/medical-devices-eudamed/overview_en",
+              "label": "Overview of EUDAMED"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "eudamed"
+        },
+        {
+          "term": "even parity",
+          "definition": "A characteristic of the encodation of a symbol character whereby the symbol character contains an even number of dark modules.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "even_parity"
+        },
+        {
+          "term": "extension digit",
+          "definition": "The first digit within the Serial Shipping Container Code (SSCC) which is assigned by the company that constructs the logistic unit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "extension_digit"
+        },
+        {
+          "term": "Facility Identifier",
+          "abbreviation": "FID",
+          "definition": "A unique identifier assigned by authorized ID issuers to every location where tobacco products are manufactured, stored, or first sold.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "fid"
+        },
+        {
+          "term": "fixed length",
+          "definition": "Term used to describe a data field in an element string with an established number of characters.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "fixed_length"
+        },
+        {
+          "term": "fixed measure trade item",
+          "definition": "An item always produced in the same predefined version (e.g., type, size, weight, contents, design) that may be sold at any point in the supply chain.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "fixed_measure_trade_item",
+          "img": "glossaryImages:FixedMeasure-vs-VariableMeasure.svg"
+        },
+        {
+          "term": "freight forwarder",
+          "definition": "The party that arranges the carriage of goods including connected services and/or associated formalities on behalf of the shipper (consignor) or consignee.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "freight_forwarder"
+        },
+        {
+          "term": "fresh foods",
+          "definition": "Trade items in the following product categories: fruits, vegetables, meats, seafood, bakery and ready to serve food such as cheeses, cold cooked or cured meats and salad, etc. Fresh foods are defined as food that is not preserved by canning, dehydration, freezing or smoking.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "fresh_foods"
+        },
+        {
+          "term": "full string",
+          "definition": "The data transmitted by the barcode reader from reading a data carrier, including the symbology identifier as well as the encoded data.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "full_string"
+        },
+        {
+          "term": "Function 1 Symbol Character",
+          "abbreviation": "FNC1",
+          "definition": "A symbology character used in some GS1 data carriers for specific purposes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "fnc1",
+          "img": "glossaryImages:FNC1-as-separator-for-GS1AIs.svg"
+        },
+        {
+          "term": "GCTIN",
+          "definition": "Deprecated in favour of: ITIP",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gctin"
+        },
+        {
+          "term": "general distribution scanning",
+          "definition": "Scanning environments that process barcoded trade items packaged for transport, logistic units, assets and location tags.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "general_distribution_scanning"
+        },
+        {
+          "term": "general retail consumer trade item",
+          "definition": "A trade item intended to be sold at retail point-of-sale identified with a GTIN-13, GTIN-12 or GTIN-8 utilising omnidirectional linear barcodes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "general_retail_consumer_trade_item"
+        },
+        {
+          "term": "general retail products",
+          "definition": "All trade items that cross point-of-sale.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "general_retail_products"
+        },
+        {
+          "term": "GLN extension component",
+          "definition": "A component used to identify internal physical sub-locations within a location (such as a selling floor area, a specific area on a shelf, etc.) which is identified with a GLN (such as stores, factories, buildings, etc.).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gln_extension_component",
+          "img": "glossaryImages:GLN_or_GLN_plus_extension.svg"
+        },
+        {
+          "term": "Global Coupon Number",
+          "abbreviation": "GCN",
+          "definition": "The GS1 identification key used to identify a coupon. The key comprises a GS1 Company Prefix, coupon reference, check digit and an optional serial number.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gcn"
+        },
+        {
+          "term": "Global Data Synchronisation Network",
+          "abbreviation": "GDSN",
+          "definition": "An Internet-based, interconnected network of interoperable data pools and a Global Registry, the GS1 Global Registry, that enables companies around the world to exchange standardised and synchronised supply chain data with their trading partners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gdsn"
+        },
+        {
+          "term": "Global Document Type Identifier",
+          "abbreviation": "GDTI",
+          "definition": "The GS1 identification key used to identify a document type. The key comprises a GS1 Company Prefix, document type, check digit and optional serial number.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gdti"
+        },
+        {
+          "term": "Global Identification Number for Consignment",
+          "abbreviation": "GINC",
+          "definition": "The GS1 identification key used to identify a logical grouping of logistic or transport units that are assembled to be transported under one transport document (e.g., waybill). The key comprises a GS1 Company Prefix and the freight forwarder’s or carrier’s transport reference.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ginc"
+        },
+        {
+          "term": "Global Individual Asset Identifier",
+          "abbreviation": "GIAI",
+          "definition": "The GS1 identification key used to identify an individual asset. The key comprises a GS1 Company Prefix and individual asset reference.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "giai",
+          "img": "glossaryImages:GIAI_individual_asset_tracking.svg"
+        },
+        {
+          "term": "Global Location Number",
+          "abbreviation": "GLN",
+          "definition": "The GS1 identification key used to identify locations or parties. The key comprises a GS1 Company Prefix, location reference and check digit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gln",
+          "img": "glossaryImages:GLN_or_GLN_plus_extension.svg"
+        },
+        {
+          "term": "Global Model Number",
+          "abbreviation": "GMN",
+          "definition": "The GS1 identification key used to identify a product model or product family. The key comprises a GS1 Company Prefix, model reference and a check character pair.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gmn"
+        },
+        {
+          "term": "Global Returnable Asset Identifier",
+          "abbreviation": "GRAI",
+          "definition": "The GS1 identification key used to identify returnable assets. The key comprises a GS1 Company Prefix, asset type, check digit and optional serial number.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "grai",
+          "img": "glossaryImages:GRAI_for_reusable_returnable_assets.svg"
+        },
+        {
+          "term": "Global Service Relation Number",
+          "abbreviation": "GSRN",
+          "definition": "The GS1 identification key used to identify the relationship between an organisation offering services and the recipient or provider of services. The key comprises a GS1 Company Prefix, service reference and check digit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gsrn",
+          "img": "glossaryImages:GSRN_patient_wristband_alt.svg"
+        },
+        {
+          "term": "Global Shipment Identification Number",
+          "abbreviation": "GSIN",
+          "definition": "The GS1 identification key used to identify a logical grouping of logistic or transport units that are assembled by the consignor (seller) for a transport shipment from that consignor to one consignee (buyer) referencing a despatch advice and/or BOL. The key comprises a GS1 Company Prefix, shipper reference and check digit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gsin"
+        },
+        {
+          "term": "Global Trade Item Number",
+          "abbreviation": "GTIN",
+          "definition": "The GS1 identification key used to identify trade items. The key comprises a GS1 Company Prefix, an item reference and check digit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin"
+        },
+        {
+          "term": "GS1 Application Identifier",
+          "abbreviation": "GS1 AI",
+          "definition": "The field of two or more digits at the beginning of an element string that uniquely defines its format and meaning.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1 ai"
+        },
+        {
+          "term": "GS1 Application Identifier data field",
+          "definition": "The data used in a business application defined by one GS1 Application Identifier.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_application_identifier_data_field"
+        },
+        {
+          "term": "GS1 check character calculation",
+          "definition": "An algorithm used by the GS1 system for the calculation of the check characters to verify accuracy of data.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_check_character_calculation"
+        },
+        {
+          "term": "GS1 check character pair",
+          "definition": "A final character pair calculated from the other characters of the Global Model Number. These characters are used to check that the data has been correctly composed and transmitted.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_check_character_pair"
+        },
+        {
+          "term": "GS1 check digit calculation",
+          "definition": "An algorithm used by the GS1 system for the calculation of a check digit to verify accuracy of data. (e.g., modulo 10 check digit, price check digit).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_check_digit_calculation"
+        },
+        {
+          "term": "GS1 Common Currency Coupon Code",
+          "definition": "An identification number for coupons issued in a common currency area (e.g., the euro currency) that uses the GS1 Prefixes 981-983.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_common_currency_coupon_code"
+        },
+        {
+          "term": "GS1 Company Prefix",
+          "abbreviation": "GCP",
+          "definition": "A unique string of four to twelve digits used to issue GS1 identification keys. The first digits are a valid GS1 Prefix. The length of the GS1 Company Prefix must be at least one longer than the length of the GS1 Prefix. The GS1 Company Prefix is issued by a GS1 Member Organisation. As the GS1 Company Prefix varies in length, the issuance of a GS1 Company Prefix excludes all longer strings that start with the same digits from being issued as GS1 Company Prefixes.See also U.P.C Company Prefix.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gcp"
+        },
+        {
+          "term": "GS1 Composite symbology",
+          "definition": "A symbology consisting of a linear component (encoding the item's primary identification) associated with an adjacent Composite Component (encoding attribute data, such as a batch number or expiration date). The composite symbol always includes a linear component so that the primary identification is readable by all scanning technologies, and so that imager scanners can use the linear component as a finder pattern for the adjacent 2D Composite Component. The composite symbol always includes one of three multi-row 2D Composite Component versions (e.g., CC-A, CC-B, CC-C) for compatibility with linear- and area-CCD scanners and with linear and rastering laser scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_composite_symbology"
+        },
+        {
+          "term": "GS1 conformant barcode",
+          "definition": "A family of symbols comprising all barcodes in accordance with an application standard, the data carrier specifications and relevant GS1 symbol specification table.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_conformant_barcode"
+        },
+        {
+          "term": "GS1 DataBar Composite symbology family",
+          "definition": "A family of symbols comprising all the GS1 DataBar barcodes when an accompanying Composite Component is printed directly above the linear component.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_composite_symbology_family"
+        },
+        {
+          "term": "GS1 DataBar Expanded barcode",
+          "definition": "A barcode that encodes any GS1 identification key plus attribute data, such as weight and “best before” date, in a linear symbol that can be scanned omnidirectionally by suitably programmed point-of-sale scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_expanded_barcode",
+          "img": "glossaryImages:GS1DataBarExpandedBarcode.svg"
+        },
+        {
+          "term": "GS1 DataBar Expanded Stacked barcode",
+          "definition": "A barcode that is a variation of the GS1 DataBar Expanded barcode that is stacked in multiple rows and is used when the normal symbol would be too wide for the application.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_expanded_stacked_barcode",
+          "img": "glossaryImages:GS1DataBarExpandedStacked.svg"
+        },
+        {
+          "term": "GS1 DataBar Limited barcode",
+          "definition": "A barcode that encodes a GTIN with a leading digit of zero or indicator digit of one in a linear symbol; for use on small items that will not be scanned at the point-of-sale.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_limited_barcode",
+          "img": "glossaryImages:DataBarLimitedBarcode.svg"
+        },
+        {
+          "term": "GS1 DataBar Omnidirectional barcode",
+          "definition": "A barcode that encodes a GTIN. It is designed to be read by omnidirectional scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_omnidirectional_barcode",
+          "img": "glossaryImages:DataBarOmnidirectionalBarcode.svg"
+        },
+        {
+          "term": "GS1 DataBar Retail POS family",
+          "definition": "The members of the GS1 DataBar symbology family designed to be read in segments by omnidirectional scanners at retail POS: GS1 DataBar Omnidirectional; GS1 DataBar Stacked Omnidirectional; GS1 DataBar Expanded; GS1 DataBar Expanded Stacked.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_retail_pos_family"
+        },
+        {
+          "term": "GS1 DataBar Stacked barcode",
+          "definition": "A barcode that is a variation of the GS1 DataBar Truncated barcode that is stacked in two rows and is used when the GS1 DataBar Truncated barcode would be too wide for the application.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_stacked_barcode",
+          "img": "glossaryImages:DataBarStacked.svg"
+        },
+        {
+          "term": "GS1 DataBar Stacked Omnidirectional barcode",
+          "definition": "A barcode that is a variation of the GS1 DataBar symbology that is stacked in two rows and is used when the GS1 DataBar Omnidirectional symbol would be too wide for the application. It is designed to be read by omnidirectional checkout scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_stacked_omnidirectional_barcode",
+          "img": "glossaryImages:DataBarStackedOmni.svg"
+        },
+        {
+          "term": "GS1 DataBar Truncated barcode",
+          "definition": "A barcode that is a truncated version of the GS1 DataBar Omnidirectional barcode. It is used when the GS1 DataBar Omnidirectional barcode would be too tall for small item marking applications. It is not intended for omnidirectional checkout scanning.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar_truncated_barcode",
+          "img": "glossaryImages:GS1DataBarTruncated.svg"
+        },
+        {
+          "term": "GS1 DataBar®",
+          "definition": "A family of barcodes, including GS1 DataBar Omnidirectional; GS1 DataBar Stacked Omnidirectional; GS1 DataBar Expanded; GS1 DataBar Expanded Stacked GS1 DataBar Truncated, GS1 DataBar Limited and GS1 DataBar Stacked symbols.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_databar"
+        },
+        {
+          "term": "GS1 DataMatrix",
+          "definition": "A subset of Data Matrix which uses the function that allows the encoding of element strings.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_datamatrix",
+          "img": "glossaryImages:GS1_DataMatrix.svg"
+        },
+        {
+          "term": "GS1 data element segment",
+          "definition": "Mandatory or optional parts of a data element value e.g., ITIP has two mandatory segments, GTIN in the first segment, then a piece number and total number of pieces in the second segment; GRAI has one mandatory segment for the returnable asset reference number, then an optional segment for a serial number.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_data_element_segment"
+        },
+        {
+          "term": "GS1 Digital Link URI",
+          "definition": "A Web URI syntax for expressing GS1 identifier keys and attributes in a format using GS1 Application Identifiers and GS1 Application Identifier data fields as specified in the GS1 Digital Link standard.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_digital_link_uri"
+        },
+        {
+          "term": "GS1 DotCode",
+          "definition": "A subset of AIM DotCode which uses the function that allows the encoding of element strings.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_dotcode",
+          "img": "glossaryImages:GS1_DotCode.svg"
+        },
+        {
+          "term": "GS1 EANCOM®",
+          "definition": "The GS1 standard for Electronic Data Interchange (EDI) that is a detailed implementation guideline of the UN/EDIFACT standard messages using the GS1 identification keys.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_eancom"
+        },
+        {
+          "term": "GS1 element string",
+          "definition": "A syntax for expressing GS1 identifier keys and attributes in a format using GS1 Application Identifiers and GS1 Application Identifier data fields.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_element_string"
+        },
+        {
+          "term": "GS1 Global Office",
+          "abbreviation": "GS1 GO",
+          "definition": "GS1 is a neutral, not-for-profit organisation that provides global standards for efficient business communication. GS1 Global Office, located in Brussels (Belgium) and Ewing, NJ (USA) is the guardian, and provides an open, user-driven, forum for ongoing maintenance and development, of the GS1 standards, guidelines and statutes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1 go"
+        },
+        {
+          "term": "GS1 Global Standards Management Process",
+          "abbreviation": "GSMP",
+          "definition": "The process created by GS1 to support standards development activity for the GS1 system. The GSMP uses a global consensus process to develop supply chain standards that are based on business needs and user-input.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gsmp"
+        },
+        {
+          "term": "GS1 identification key",
+          "abbreviation": "GS1 key",
+          "definition": "Numeric or alphanumeric strings that incorporate a GS1 Prefix, GS1 Company Prefix or GS1-8 Prefix and are the basis of the unique GS1 identifiers defined for use in an area of GS1 system application such as trade, logistics, or asset management. They may identify a class of entities (e.g., a trade item) or an instance of an entity (e.g., a logistic unit). The term GS1 identification key is for broad communications such as for marketing, licensing, policy etc",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1 key"
+        },
+        {
+          "term": "GS1 identification licensee",
+          "definition": "The person (natural or legal) to which the right to use a GS1 Company Prefix or a GS1 identification key has been granted through an agreement with a GS1 Member Organisation or GS1 Global Office, acting as licensor. GS1 identification licensees may use the licensed GS1 Company Prefix or GS1 identification key, subject to any terms and conditions in place when the licence was granted or set by the licensor from time to time, until such time as the agreement under which the licence was granted expires or in perpetuity if the agreement has no expiration date.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_identification_licensee"
+        },
+        {
+          "term": "GS1 identifier",
+          "definition": "Data element(s) that expresses a GS1 identification key with or without a GS1 identifier extension, to identify an entity and connect to information about that entity. The term GS1 identifier is for greater precision at the technical level, such as for GS1 standards, GS1 guidelines and end-user implementations.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_identifier"
+        },
+        {
+          "term": "GS1 identifier extension",
+          "definition": "Data element that can be used with a simple GS1 identifier to form a compound GS1 identifier.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_identifier_extension"
+        },
+        {
+          "term": "GS1 informative data",
+          "definition": "A data element that provides information about an entity identified with a GS1 identifier, such as a use by date, its weight, or country of origin code, for the purpose of informing or completing an action or decision.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_informative_data"
+        },
+        {
+          "term": "GS1 Member Organisation",
+          "abbreviation": "GS1 MO",
+          "definition": "A member of GS1 that is responsible for administering the GS1 system in its country (or assigned area). This task includes, but is not restricted to, ensuring user companies make correct use of the GS1 system, have access to education, training, promotion and implementation support and have access to play an active role in GSMP.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1 mo"
+        },
+        {
+          "term": "GS1 Prefix",
+          "definition": "A unique string of two or more digits issued by GS1 Global Office and allocated to GS1 Member Organisations to issue GS1 Company Prefixes or allocated to other specific areas.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_prefix"
+        },
+        {
+          "term": "GS1 QR Code",
+          "definition": "A subset of QR Code which uses the function that allows the encoding of element strings.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_qr_code",
+          "img": "glossaryImages:GS1_QRCode.svg",
+          "isTypeOf": [
+            "2d",
+            "qr_code_symbology"
+          ]
+        },
+        {
+          "term": "GS1 symbologies using GS1 Application Identifiers",
+          "definition": "All GS1 endorsed barcode symbologies that can encode more than a GTIN namely GS1-128, GS1 DataMatrix, GS1 DataBar, GS1 QR Code, GS1 DotCode and GS1 Composite.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_symbologies_using_gs1_application_identifiers"
+        },
+        {
+          "term": "GS1 syntax",
+          "definition": "A data structure used within the GS1 system of standards for representing data elements. GS1 syntax includes plain syntax, GS1 element string, GS1 Digital Link URI, Electronic Product Code (EPC) URI and EPC binary string.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_syntax"
+        },
+        {
+          "term": "GS1 system",
+          "definition": "The sum of all the artefacts created by the GS1 community through GS1’s community development processes, including GS1 standards, GS1 guidelines, GS1 solutions, and GS1 data services.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_system"
+        },
+        {
+          "term": "GS1 UIC Extension 1",
+          "definition": "Character that follows and extends the EU 2018/574 UIC to identify a country of ID Issuer’s appointment and operation.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_uic_extension_1"
+        },
+        {
+          "term": "GS1 UIC Extension 2",
+          "definition": "Character that follows GS1 UIC Extension 1 and extends the EU 2018/574 UIC to identify whether a GS1 or non-GS1 based algorithm is used.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_uic_extension_2"
+        },
+        {
+          "term": "GS1 XML",
+          "definition": "The GS1 standard for extensible markup language (XML) schemas providing users with a global business messaging language of e-business to conduct efficient internet-based commerce.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1_xml"
+        },
+        {
+          "term": "GS1®",
+          "definition": "Based in Brussels, Belgium and Princeton, USA, it is the organisation that manages the GS1 system. Its members are GS1 Member Organisations.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1"
+        },
+        {
+          "term": "GS1-128 symbology",
+          "definition": "A subset of Code 128 which uses the function that allows the encoding of element strings.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1-128_symbology"
+        },
+        {
+          "term": "GS1-8 Prefix",
+          "definition": "A unique string of two or more digits issued by GS1 Global Office and allocated to GS1 Member Organisations to issue GTIN-8s or allocated to issue RCN-8s (see RCN-8).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gs1-8_prefix"
+        },
+        {
+          "term": "GTIN allocator",
+          "definition": "The party that warrants the trade item declarations about a trade item to which they allocate a GTIN. This is the party who is the licensee of the GTIN applied to a specific trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_allocator"
+        },
+        {
+          "term": "GTIN plus attribute(s) flag",
+          "definition": "A trigger in systems to determine if additional processing is required by a barcode user for a given GTIN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_plus_attribute_s_flag"
+        },
+        {
+          "term": "GTIN‑12",
+          "definition": "The 12-digit GS1 identification key composed of a U.P.C. Company Prefix, item reference and check digit used to identify trade items.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_12"
+        },
+        {
+          "term": "GTIN‑13",
+          "definition": "The 13-digit GS1 identification key composed of a GS1 Company Prefix, item reference and check digit used to identify trade items.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_13"
+        },
+        {
+          "term": "GTIN‑14",
+          "definition": "The 14-digit GS1 identification key composed of an indicator digit (1-9), GS1 Company Prefix, item reference and check digit used to identify trade items.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_14"
+        },
+        {
+          "term": "GTIN‑8",
+          "definition": "The 8-digit GS1 identification key composed of a GS1-8 Prefix, item reference and check digit used to identify trade items.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "gtin_8"
+        },
+        {
+          "term": "guard bar pattern",
+          "definition": "An auxiliary pattern of bars and spaces corresponding to start or stop patterns in barcode symbologies, and serving to separate the two halves of EAN-8, EAN-13 and UPC-A symbols.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "guard_bar_pattern",
+          "img": "glossaryImages:GuardBarPattern.svg"
+        },
+        {
+          "term": "healthcare primary packaging",
+          "definition": "The first level of packaging for the product marked with an AIDC data carrier either on the packaging or on a label affixed to the packaging. For non-sterile packaging, the first level of packaging can be the packaging in direct contact with the product. For sterile packaging, the first level of packaging can be any combination of the sterile packaging system, may consist of a single item or group of items for a single therapy such as a kit. For packaging configurations that include a retail consumer trade item, primary packaging is a packaging level below the retail consumer trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "healthcare_primary_packaging"
+        },
+        {
+          "term": "healthcare provider",
+          "definition": "An organisation or facility that delivers healthcare to a subject of care. Corresponds to “care delivery organisation”, “healthcare organisation”, etc.",
+          "links": [],
+          "examples": [
+            "care delivery organisation",
+            "healthcare organisation"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "healthcare_provider"
+        },
+        {
+          "term": "healthcare secondary packaging",
+          "definition": "A level of packaging marked with an AIDC carrier that may contain one or more primary packages each of which may contain a single item or multiple items.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "healthcare_secondary_packaging"
+        },
+        {
+          "term": "Highly Individualised Device",
+          "definition": "Device subject to EUDAMED registration via MUDI-DI as UDI-DI",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/",
+              "label": "EU medical device regulation 2017/745"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "highly_individualised_device"
+        },
+        {
+          "term": "Highly Individualised Device Registration Identifier",
+          "abbreviation": "HIDRI",
+          "definition": "A special version of the Global Model Number that identifies a group of highly individualised medical devices within EUDAMED.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "hidri"
+        },
+        {
+          "term": "House Waybill Number",
+          "definition": "A freight forwarder’s document used mainly as a control for the goods within the freight forwarder’s own service system.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "house_waybill_number"
+        },
+        {
+          "term": "human readable interpretation",
+          "abbreviation": "HRI",
+          "definition": "Characters, such as letters and numbers, which can be read by persons and are encoded in GS1 AIDC data carriers confined to a GS1 standard structure and format. The human readable interpretation is the encoded data. Start, stop, shift and function characters, as well as the symbol check character, are not shown in the human readable interpretation.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "hri",
+          "img": "glossaryImages:HRI_as_backup_when_barcode_does_not_scan.svg"
+        },
+        {
+          "term": "human readable text",
+          "definition": "Refers to HRI and/or non-HRI text collectively, when referencing data that is encoded into a data carrier.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "human_readable_text"
+        },
+        {
+          "term": "Identification of an individual trade item piece",
+          "abbreviation": "ITIP",
+          "definition": "Identifies an individual piece of a trade item that is not traded independently and therefore cannot be assigned its own GTIN.  It has two mandatory segments, GTIN in the first segment (which is the GTIN for the complete trade item, represented as 14 digits), then a two-digit piece number (that identifies the individual piece of a trade item, such as the left shoe of a pair of shoes) and two-digit total number of pieces within the second four-digit segment.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "itip"
+        },
+        {
+          "term": "Importer index",
+          "definition": "Character to identify the presence or absence of an importer within the EU 2018/574 EOID, FID and MID. This means either the absence of an importer (null) or presence of one importer out of up to 63 importer possibilities per country, per GTIN.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "importer_index"
+        },
+        {
+          "term": "indicator",
+          "definition": "A digit from 1 to 9 in the leftmost position of the GTIN-14.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "indicator"
+        },
+        {
+          "term": "indirect mode",
+          "definition": "Mobile device information retrieval function when the code contains an identifier, which needs to be resolved to obtain the content or service. Resolving an identifier means looking it up, typically at a network service, to determine the corresponding content or service.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "indirect_mode"
+        },
+        {
+          "term": "individual asset",
+          "definition": "An object that is part of the inventory of assets for a given company.(See also returnable asset.)",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "individual_asset"
+        },
+        {
+          "term": "individual asset reference",
+          "definition": "A component of the Global Individual Asset Identifier (GIAI) assigned by the asset owner or manager to create a unique GIAI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "individual_asset_reference"
+        },
+        {
+          "term": "individual provider",
+          "definition": "Any person who provides or is a potential provider of a health care service to a subject of care.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "individual_provider"
+        },
+        {
+          "term": "instance level GS1 identifier",
+          "definition": "An identifier of an individual entity (e.g., one specific trade item, allocated the same GTIN as others within a class, but distinguished by serial number).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "instance_level_gs1_identifier"
+        },
+        {
+          "term": "Interleaved 2 of 5 symbology",
+          "definition": "Barcode symbology used for the ITF-14 barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "interleaved_2_of_5_symbology"
+        },
+        {
+          "term": "International Standard Book Number",
+          "abbreviation": "ISBN",
+          "definition": "A 13-digit number that identifies the title or other book-like product (such as an audiobook) to which it is assigned that is obtained from the official ISBN Agency in a country.",
+          "links": [
+            {
+              "url": "https://www.isbn.org/"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "isbn"
+        },
+        {
+          "term": "International Organization for Standardization",
+          "abbreviation": "ISO",
+          "definition": "A global body developing voluntary standards for quality, safety, and efficiency across industries.",
+          "links": [
+            {
+              "url": "https://www.iso.org/"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "iso"
+        },
+        {
+          "term": "International Standard Serial Number",
+          "abbreviation": "ISSN",
+          "definition": "An 8-digit code used to identify newspapers, journals, magazines and periodicals of all kinds.",
+          "links": [
+            {
+              "url": "https://www.issn.org/"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "issn"
+        },
+        {
+          "term": "inverse exponent",
+          "definition": "The GS1 Application Identifier digit that denotes the implied decimal point position in an element string.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "inverse_exponent"
+        },
+        {
+          "term": "issuance",
+          "definition": "The generation of a GS1 Prefix, GS1 Company Prefix, or GS1 identification key in accordance with GS1 rules and policies by GS1 or a GS1 Member Organisation.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "issuance"
+        },
+        {
+          "term": "item reference",
+          "definition": "A component of the Global Trade Item Number (GTIN) assigned by the brand owner to create a unique GTIN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "item_reference"
+        },
+        {
+          "term": "ITF-14 barcode",
+          "definition": "ITF-14 (a subset of Interleaved 2-of-5) barcodes carry GTINs only on trade items that are not expected to pass through the point-of-sale.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "itf-14_barcode"
+        },
+        {
+          "term": "kit",
+          "definition": "A collection of different regulated healthcare items assembled for use in a single therapy.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "kit"
+        },
+        {
+          "term": "leading zero(es)",
+          "definition": "Adding zeroes in the leftmost position(s) of a data string when GTIN-8, GTIN-12, or GTIN-13 are encoded in an GS1 AIDC data carrier, message, or database that requires 14-digits or when used for the same intent in other data structures such as GRAI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "leading_zero_es"
+        },
+        {
+          "term": "levels of AIDC marking",
+          "definition": "A graduated system of AIDC marking. The graduated system is defined as minimum, enhanced and highest levels of AIDC marking.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "levels_of_aidc_marking"
+        },
+        {
+          "term": "linear barcode",
+          "definition": "Barcode symbology using bars and spaces in one dimension.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "linear_barcode"
+        },
+        {
+          "term": "local assigned code",
+          "abbreviation": "LAC",
+          "definition": "A particular use of the UPC-E barcode for restricted distribution.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "lac"
+        },
+        {
+          "term": "location reference",
+          "definition": "A component of a Global Location Number (GLN) that allows the party defining the party or location to create a unique GLN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "location_reference"
+        },
+        {
+          "term": "logistic measures",
+          "definition": "Measures indicating the outside dimensions, total weight, or volume inclusive of packing material of a logistic unit. Also known as gross measures.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "logistic_measures"
+        },
+        {
+          "term": "logistic unit",
+          "definition": "An item of any composition established for transport and/or storage that needs to be managed through the supply chain. It is identified with a Serial Shipping Container Code (SSCC).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "logistic_unit"
+        },
+        {
+          "term": "Made-to-Order trade item",
+          "abbreviation": "MtO",
+          "definition": "A bespoke (e.g., customised, personalised, configurable) product or service where the GTIN, allocated per application specific rules rather than the GTIN Management Standard, plus a compound key data element (Made-to-Order variant, lot number, serial number) is required to distinguish whenever any of the trade item declarations are different in any way that is relevant to the trading process.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "mto"
+        },
+        {
+          "term": "Made-to-Stock trade item",
+          "abbreviation": "MtS",
+          "definition": "A product or service where a separate, unique GTIN, allocated per the GTIN Management Standard, is required to distinguish whenever any of the trade item declarations are different in any way that is relevant to the trading process.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "mts"
+        },
+        {
+          "term": "Magnification",
+          "definition": "Deprecated in favour of: X-dimension",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "magnification"
+        },
+        {
+          "term": "main symbol",
+          "definition": "The barcode containing the identification number of the item (e.g., GTIN, SSCC). Used to determine the placement of any additional barcode information.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "main_symbol"
+        },
+        {
+          "term": "Master Unique Device Identifier – Device Identifier",
+          "abbreviation": "MUDI-DI",
+          "definition": "The Master UDI-DI is a unique identifier specific to a family of highly individualised medical devices for the restricted use of EUDAMED registration.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "mudi-di"
+        },
+        {
+          "term": "measure verifier digit",
+          "definition": "A digit calculated from the measure field in a Restricted Circulation Number (RCN) that is used to check that the data has been correctly composed.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "measure_verifier_digit"
+        },
+        {
+          "term": "Medical device family",
+          "definition": "A group of medical devices manufactured by or for the same organization and have the same basic design and performance characteristics related to safety, intended use and function.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "medical_device_family"
+        },
+        {
+          "term": "merchant",
+          "definition": "The party that makes a trade item available for sale. A retailer is one type of merchant. An online seller is another type of merchant.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "merchant"
+        },
+        {
+          "term": "model reference",
+          "definition": "A component of the Global Model Number (GMN) assigned by the brand owner to create a unique GMN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "model_reference"
+        },
+        {
+          "term": "module",
+          "definition": "The narrowest nominal width unit of measure in a barcode. In certain symbologies, element widths may be specified as multiples of one module. The nominal width (& height for 2D barcodes) of a single module is equivalent to the X-dimension.",
+          "links": [],
+          "examples": [
+            "X-dimension"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "module",
+          "img": "glossaryImages:QR_Code-interactive.svg?show=module"
+        },
+        {
+          "term": "modulo 10",
+          "definition": "The name of the algorithm – a simple checksum formula in the public domain – used to create a check digit for those GS1 identification keys that require one.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "modulo_10"
+        },
+        {
+          "term": "multiple unit blister/package",
+          "definition": "Immediate package for a medicine with more than one single unit. Package which fully encloses the pill/caplet/capsule. Each dosage form may be individually packaged. The individually blistered dosage forms are attached to each other in one strip.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "multiple_unit_blister_package"
+        },
+        {
+          "term": "National Healthcare Reimbursement Number",
+          "abbreviation": "NHRN",
+          "definition": "National and/or regional identification numbers used on pharmaceutical and/or medical devices where required by national or regional regulatory organisations for product registration purposes and/or for the management of healthcare provider reimbursement.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "nhrn"
+        },
+        {
+          "term": "National Trade Item Number",
+          "abbreviation": "NTIN",
+          "definition": "A coding scheme, administered in the healthcare sector by a national organisation for which a GS1 Prefix has been issued to permit its uniqueness within the GTIN pool but without assurance of full compatibility with GTIN functionality. The result is a product identification number assigned by a third party (not the brand owner or manufacturer). Example: the CIP (Club Inter Pharmaceutique) in France administered by the French Health Products Safety Agency (AFSSAPS).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ntin"
+        },
+        {
+          "term": "near field communication",
+          "abbreviation": "NFC",
+          "definition": "A technology that uses inductive fields at 13.56 MHz to automatically capture data. An NFC system consists of NFC tags and readers. When interrogated by an NFC reader (initiator), the NFC tag (target) transmits digital data, usually a web URL, back to the reader.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "nfc"
+        },
+        {
+          "term": "NFC Data Exchange Format",
+          "abbreviation": "NDEF",
+          "definition": "A standard developed by the NFC Forum to encapsulate and exchange application-defined payloads (such as URIs, plain text, or custom data) between NFC-enabled devices and tag.",
+          "links": [
+            {
+              "url": "https://nfc-forum.org/"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "ndef"
+        },
+        {
+          "term": "non-human readable interpretation text",
+          "abbreviation": "non-HRI",
+          "definition": "Characters such as letters and numbers that can be read by persons and may or may not be encoded in GS1 AIDC data carriers and are not confined to a structure and format based on GS1 standards (e.g., a date code expressed in a national format that could be used to encode a date field in a GS1 AIDC data carrier, brand owner name, consumer declarations).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "non-hri"
+        },
+        {
+          "term": "Number System Character",
+          "definition": "Deprecated in favour of: U.P.C. Prefix",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "number_system_character"
+        },
+        {
+          "term": "odd parity",
+          "definition": "A characteristic of the encodation of a symbol character whereby the symbol character contains an odd number of dark modules.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "odd_parity"
+        },
+        {
+          "term": "offer declarations",
+          "definition": "The set of all information declared (or agreed to) by the seller about the trade item (inclusive of price, availability, terms of sale, claims, condition, shipping information, returns information, etc).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "offer_declarations"
+        },
+        {
+          "term": "omnidirectional linear barcode",
+          "definition": "A linear barcode symbology designed to be read in segments by suitably programmed laser point-of-sale (POS) scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "omnidirectional_linear_barcode"
+        },
+        {
+          "term": "packaging component",
+          "definition": "Objects such as bottles, caps and labels to package a consumer trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "packaging_component"
+        },
+        {
+          "term": "packaging component number",
+          "definition": "Global Trade Item Number (GTIN) attribute used to establish a relationship between a finished consumer trade item and packaging components.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "packaging_component_number"
+        },
+        {
+          "term": "payment slip",
+          "definition": "The end customer’s notification of a demand for payment for a billable service (e.g., utility bill) comprising an amount payable and payment conditions.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "payment_slip"
+        },
+        {
+          "term": "physical trade item assortment/bundle",
+          "definition": "A combination of different trade items that are physically combined into a single trade item, thus creating a new trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "physical_trade_item_assortment_bundle"
+        },
+        {
+          "term": "plain syntax",
+          "definition": "GS1 data structure containing GS1 identification key with no additional characters or syntactic features.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "plain_syntax"
+        },
+        {
+          "term": "point-of-care",
+          "abbreviation": "POC",
+          "definition": "Location where dispensing or use of a non-retail, regulated healthcare pharmaceutical or medical device to or for a patient occurs.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "poc"
+        },
+        {
+          "term": "point-of-sale",
+          "abbreviation": "POS",
+          "definition": "The retail checkout where omnidirectional linear barcodes must be used to support high-volume laser-based scanning or low volume checkout where linear barcodes (or for regulated healthcare trade items, GS1 DataMatrix) are used with image-based scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "pos"
+        },
+        {
+          "term": "predefined assortments",
+          "definition": "A trade item that comprises a fixed composition of two or more different trade items, each identified with a GTIN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "predefined_assortments"
+        },
+        {
+          "term": "price verifier digit",
+          "definition": "A digit calculated from the price element in a Restricted Circulation Number (RCN) that is used to check that the data has been correctly composed.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "price_verifier_digit"
+        },
+        {
+          "term": "print gain/loss",
+          "definition": "Deprecated in favour of: bar gain/loss",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "print_gain_loss"
+        },
+        {
+          "term": "product model",
+          "definition": "A base product design or specification from which a trade item is derived.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "product_model"
+        },
+        {
+          "term": "QR Code (GS1 Digital Link URI)",
+          "definition": "QR Code encoding data using the uncompressed form of GS1 Digital Link URI syntax.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "qr_code_gs1_digital_link_uri",
+          "img": "glossaryImages:QRCode_DigitalLinkURI.svg",
+          "isTypeOf": [
+            "2d",
+            "qr_code_symbology"
+          ]
+        },
+        {
+          "term": "QR Code symbology",
+          "definition": "A two-dimensional barcode symbology consisting of square modules arranged in a square pattern. The symbology is characterised by a unique finder pattern located at three corners of the symbol. QR Code symbols are read by two-dimensional imaging scanners or vision systems.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "qr_code_symbology",
+          "img": "glossaryImages:QRCode_DigitalLinkURI.svg",
+          "isTypeOf": [
+            "2d"
+          ]
+        },
+        {
+          "term": "Quiet Zone",
+          "definition": "A clear space which precedes the start character and follows the stop character of a linear barcode or surrounds a 2D barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "quiet_zone",
+          "img": "glossaryImages:QR_Code-interactive.svg?show=quiet-zone",
+          "isPartOf": [
+            "2d"
+          ]
+        },
+        {
+          "term": "Quiet Zone Indicator",
+          "definition": "A greater than (>) or less than (<) character, printed in the human readable field of the barcode, with the tip aligned with the outer edge of the Quiet Zone.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "quiet_zone_indicator"
+        },
+        {
+          "term": "radio frequency",
+          "definition": "Any frequency within the electromagnetic spectrum associated with radio wave propagation. When radio frequency power is supplied to an antenna, an electromagnetic field is created that then is able to propagate through space. A radio frequency signal that can be processed by a radio frequency receiver. Many wireless technologies are based on radio frequency field propagation.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "radio_frequency"
+        },
+        {
+          "term": "radio frequency identification",
+          "abbreviation": "RFID",
+          "definition": "A technology that uses radio frequency electromagnetic fields or waves to automatically identify and track tags attached to objects. An RFID system consists of RFID tags and readers. When triggered by a radio frequency electromagnetic interrogation signal from a nearby RFID reader, the RFID tag transmits digital data, usually a unique identifier like an EPC, back to the reader.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rfid"
+        },
+        {
+          "term": "RCN-12",
+          "definition": "A 12-digit Restricted Circulation Number (see Restricted Circulation Number).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rcn-12"
+        },
+        {
+          "term": "RCN-13",
+          "definition": "A 13-digit Restricted Circulation Number (see Restricted Circulation Number).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rcn-13"
+        },
+        {
+          "term": "RCN-8",
+          "definition": "An 8-digit Restricted Circulation Number (see Restricted Circulation Number)",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rcn-8"
+        },
+        {
+          "term": "Reduced Space Symbology",
+          "abbreviation": "RSS",
+          "definition": "Deprecated in favour of: GS1 DataBar Symbology",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rss"
+        },
+        {
+          "term": "refund receipt",
+          "definition": "A voucher produced by equipment handling empty containers (i.e., bottles and crates).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "refund_receipt"
+        },
+        {
+          "term": "regular expression",
+          "definition": "A sequence of characters that specifies a search pattern that is usually used by string-searching algorithms for search / find-and-replace operations on strings or for validation of string input.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "regular_expression"
+        },
+        {
+          "term": "regulated healthcare non-retail consumer trade item",
+          "definition": "A regulated healthcare trade item not intended for scanning at POS and identified with a GTIN-14, GTIN-13, GTIN-12 or GTIN-8 utilising linear or 2D barcodes that can be scanned by image-based scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "regulated_healthcare_non-retail_consumer_trade_item"
+        },
+        {
+          "term": "regulated healthcare retail consumer trade item",
+          "definition": "A regulated healthcare trade item to be sold to the end consumers at a regulated healthcare retail point-of-sale (i.e., pharmacies). They are identified with a GTIN-13, GTIN-12 or GTIN-8 utilising linear or GS1 DataMatrix barcodes that can be scanned by image-based scanners.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "regulated_healthcare_retail_consumer_trade_item"
+        },
+        {
+          "term": "regulated healthcare trade item",
+          "abbreviation": "RHTI",
+          "definition": "Pharmaceuticals or medical devices that are sold or dispensed in a controlled environment (e.g., retail pharmacy, hospital pharmacy).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rhti"
+        },
+        {
+          "term": "responsible entity",
+          "definition": "The party responsible for the safety and effectiveness of the medical product at a moment in time in its life cycle, according to the approved regulatory file (including labelling) and regulatory/legal/professional obligations associated with the medical product. (e.g., brand owner, repackager, hospital pharmacy, etc.)",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "responsible_entity"
+        },
+        {
+          "term": "Restricted Circulation Number",
+          "abbreviation": "RCN",
+          "definition": "An identification number used for special applications in restricted environments, either defined by local GS1 Member Organisations (for regional applications such as variable measure product identification and, couponing) or by a company (for internal applications).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "rcn"
+        },
+        {
+          "term": "retail consumer trade item variant",
+          "definition": "A variation of change to a retail consumer trade item (which may itself be a homogeneous or predefined assortment of other retail consumer trade items) which does not require a new GTIN, but where identification of the variation may be required.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "retail_consumer_trade_item_variant"
+        },
+        {
+          "term": "returnable asset",
+          "definition": "A reusable entity owned by a company that is used for transport and storage of goods. It is identified with a GRAI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "returnable_asset"
+        },
+        {
+          "term": "SCC-14",
+          "definition": "Deprecated in favour of: Global Trade Item Number",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "scc-14"
+        },
+        {
+          "term": "separator character",
+          "definition": "Special character(s) that are defined as part of GS1 symbologies and used to separate concatenated element strings, based on their positioning in the GS1 barcodes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "separator_character"
+        },
+        {
+          "term": "serial number",
+          "definition": "A code, numeric or alphanumeric, assigned to an individual instance of an entity for its lifetime. Example: a unique individual item may be identified with the combined Global Trade Item Number (GTIN) and serial number.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "serial_number"
+        },
+        {
+          "term": "serial reference",
+          "definition": "A component of the Serial Shipping Container Code (SSCC) assigned by the physical builder or brand owner of the logistic unit to create a unique SSCC.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "serial_reference"
+        },
+        {
+          "term": "Serial Shipping Container Code",
+          "abbreviation": "SSCC",
+          "definition": "The GS1 identification key used to identify logistics units. The key comprises an extension digit, GS1 Company Prefix, serial reference and check digit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "sscc",
+          "img": "glossaryImages:item_case_pallet_and_identifiers.svg"
+        },
+        {
+          "term": "service reference",
+          "definition": "A component of the Global Service Relation Number (GSRN) assigned by the issuing organisation to create a unique GSRN.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "service_reference"
+        },
+        {
+          "term": "service relation instance number",
+          "abbreviation": "SRIN",
+          "definition": "An attribute to the GSRN which allows to distinguish different encounters during a service relationship.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "srin"
+        },
+        {
+          "term": "shipment",
+          "definition": "A grouping of logistic and transport units assembled and identified by the seller (sender) of the goods travelling under one despatch advice and/or Bill of Lading to one customer (recipient).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "shipment"
+        },
+        {
+          "term": "short life items",
+          "definition": "An item, preparation or reconstituted product with limited use/shelf life.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "short_life_items"
+        },
+        {
+          "term": "simple GS1 identifier",
+          "definition": "A single data element that identifies an entity at class level or instance level.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "simple_gs1_identifier"
+        },
+        {
+          "term": "single unit package/blister",
+          "definition": "A healthcare primary package that contains one discrete pharmaceutical dosage form, i.e. a tablet, a certain volume of a liquid or that is the immediate package for a medical device like a syringe. A number of single units attached to each other, but are easily separated through a perforation would be included.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "single_unit_package_blister"
+        },
+        {
+          "term": "standard contact lenses",
+          "definition": "A type of highly individualised device, (typically made-to-stock and identified by GTIN for trade purposes), registered in EUDAMED per European Medical Device Regulations (MDR)",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj/",
+              "label": "EU medical device regulation 2017/745"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "standard_contact_lenses"
+        },
+        {
+          "term": "sterile packaging system",
+          "definition": "A combination of the sterile barrier system (the minimum package that prevents ingress of microorganisms and allows aseptic presentation of the product at the point of use) and the protective packaging (configuration of materials designed to prevent damage to the sterile barrier system and its contents until the point of use).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "sterile_packaging_system"
+        },
+        {
+          "term": "stock keeping unit",
+          "abbreviation": "SKU",
+          "definition": "A widely used industry term generally referring to a retailer’s internal product code.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "sku"
+        },
+        {
+          "term": "string",
+          "definition": "A series of alphanumeric characters, representing one or more pieces of data. Depending on the technology it may be inclusive of data element qualifiers e.g., GS1 element string, or may reference only the data element value e.g., GS1 identifier data element value or GS1 informative data element value. Strings may be historically referred to as numbers despite allowing non-numeric characters e.g., serial number, Global Model Number, purchase order number etc.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "string"
+        },
+        {
+          "term": "sub-class level GS1 identifier",
+          "definition": "An identifier of a subset of a class of entities that share class-level characteristics plus additional characteristics (e.g., all trade items, allocated the same GTIN but distinguished by batch/lot number).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "sub-class_level_gs1_identifier"
+        },
+        {
+          "term": "subject of care",
+          "definition": "Any person who uses or is a potential user of a healthcare service, subjects of care may also be referred to as patients or healthcare consumers.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "subject_of_care"
+        },
+        {
+          "term": "substrate",
+          "definition": "The material on which a barcode is printed or otherwise applied.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "substrate"
+        },
+        {
+          "term": "Supplemental symbol",
+          "definition": "A GS1-128 barcode used in combination with EAN/UPC, ITF-14 or GS1-128 where additional information is required beyond the barcode that carries the GS1 key (main symbol).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "supplemental_symbol"
+        },
+        {
+          "term": "supplier",
+          "definition": "The party that produces, provides, or furnishes an item or service.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "supplier"
+        },
+        {
+          "term": "symbol character",
+          "definition": "A group of bars and spaces in a symbol that is decoded as a single unit. It may represent an individual digit, letter, punctuation mark, control indicator, or multiple data characters (see also codeword).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbol_character"
+        },
+        {
+          "term": "symbol check character",
+          "definition": "A symbol character or set of bar/space patterns included within a GS1-128 or GS1 DataBar symbol, the value of which is used by the barcode reader for the purpose of performing a mathematical check to ensure the accuracy of the scanned data. It is not shown in human readable interpretation. It is not input to the barcode printer and is not transmitted by the barcode reader.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbol_check_character"
+        },
+        {
+          "term": "symbol contrast",
+          "definition": "A parameter in ISO/IEC 15415 and ISO/IEC 15416 that measures the difference between the largest and smallest reflectance values in a Scan Reflectance Profile (SRP).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbol_contrast",
+          "img": "glossaryImages:Symbol_Contrast.svg"
+        },
+        {
+          "term": "Symbol Control Character",
+          "definition": "Deprecated in favour of: symbology element",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbol_control_character"
+        },
+        {
+          "term": "symbology",
+          "definition": "A defined method of representing numeric or alphabetic characters in a barcode; a type of barcode.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbology"
+        },
+        {
+          "term": "symbology identifier",
+          "definition": "A sequence of characters generated by the decoder (and prefixed to the decoded data transmitted by the decoder) that identifies the symbology from which the data has been decoded.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "symbology_identifier"
+        },
+        {
+          "term": "Third Party Controlled, Serialised Extension of GTIN",
+          "abbreviation": "TPX",
+          "definition": "A specific, compliant unit-level unique identifier (upUI) used for tobacco traceability per the EU regulation.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "tpx"
+        },
+        {
+          "term": "trade item",
+          "definition": "Any item (product or service) upon which there is a need to retrieve predefined information and that may be priced, or ordered, or invoiced at any point in any supply chain.",
+          "links": [],
+          "examples": [
+            "product",
+            "service"
+          ],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "trade_item"
+        },
+        {
+          "term": "trade item declarations",
+          "definition": "The set of all information about a trade item (e.g., manufacturer warranty, ingredients, instructions for use, specifications, contents, certifications, predefined characteristics, and other information). For a trade item, this is all of the information that is on the label and in the original packaging. It also includes relevant aspects of the extended packaging.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "trade_item_declarations"
+        },
+        {
+          "term": "trade item grouping",
+          "definition": "A predefined composition of trade item(s) that is not intended for point-of-sale scanning. It is identified with a GTIN-14, GTIN-13, or GTIN-12.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "trade_item_grouping"
+        },
+        {
+          "term": "trade measures",
+          "definition": "Net measures of variable measure trade items as used for invoicing (billing) the trade item.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "trade_measures"
+        },
+        {
+          "term": "transport process information",
+          "definition": "A set of information relevant to the processing, delivery or return of a transport unit. For example, transport process information would include address details.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "transport_process_information"
+        },
+        {
+          "term": "transport unit",
+          "definition": "A logistic unit within the context of transport processes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "transport_unit"
+        },
+        {
+          "term": "truncation",
+          "definition": "Printing a symbol shorter than the symbology specification’s minimum height recommendations. Truncation can make the symbol difficult for an operator to scan.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "truncation"
+        },
+        {
+          "term": "two-dimensional barcode symbology",
+          "abbreviation": "2D",
+          "definition": "Optically readable symbols that must be examined both vertically and horizontally to read the entire message. 2D barcodes may be one of two types: matrix symbols and multi-row symbols. 2D barcodes have error detection and may include error correction features.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "2d"
+        },
+        {
+          "term": "U.P.C. Company Prefix",
+          "definition": "A GS1 Company Prefix starting with a zero (‘0’) becomes a U.P.C. Company Prefix by removing the leading zero. A U.P.C. Company Prefix is used to issue and allocate GTIN-12.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "u_p_c_company_prefix"
+        },
+        {
+          "term": "U.P.C. Prefix",
+          "definition": "A GS1 Prefix starting with a zero (‘0’) becomes a U.P.C. Prefix by removing the leading zero. A U.P.C. Prefix is used to issue U.P.C. Company Prefixes or allocated to other specific areas.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "u_p_c_prefix"
+        },
+        {
+          "term": "Unique Device Identifier – Device Identifier",
+          "abbreviation": "UDI-DI",
+          "definition": "A unique identifier specific to a medical device trade item represented by a Global Trade Item Number (GTIN).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "udi-di"
+        },
+        {
+          "term": "Unique Device Identifier – Production Identifier",
+          "abbreviation": "UDI-PI",
+          "definition": "A numeric or alphanumeric code that identifies the unit of device production. The different types of UDI-PIs include serial number, lot number, software identification and manufacturing or expiry date or both types of date.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "udi-pi"
+        },
+        {
+          "term": "Unique Device Identifier",
+          "abbreviation": "UDI",
+          "definition": "A series of numeric or alphanumeric characters that is created through a globally accepted device identification and coding standard. It allows the unambiguous identification of a specific medical device on the market. The UDI is comprised of the UDI-DI and the UDI-PI. The word ‘Unique’ does not imply serialisation of individual production units.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "udi"
+        },
+        {
+          "term": "Unique Identification Code",
+          "abbreviation": "UIC",
+          "definition": "Identifier of an EU 2018/574 ID Issuer that begins with an ISO 15459 Issuing Agency Code.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "uic"
+        },
+        {
+          "term": "unit of measure",
+          "abbreviation": "UoM",
+          "definition": "Refers to the standard measurement index being used (e.g., kilometres, metres, miles, inches, etc.).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "uom"
+        },
+        {
+          "term": "unit of use",
+          "abbreviation": "UoU",
+          "definition": "Refers to an individual unit package that is prescribed for or administered to a patient regardless whether it is packaged individually or, on the contrary, the smallest package contains more than one unit. May coincide with the single unit and the base unit.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "uou"
+        },
+        {
+          "term": "Unit of Use UDI-DI",
+          "abbreviation": "UoU UDI-DI",
+          "definition": "Device identifier for the unit of use, meant to associate the use of a device with a patient. In cases where the unit of use coincides with another packaging level, that level’s device identifier functions as a UoU UDI-DI, otherwise a separate device identifier has to be allocated. For example, three clips (which do not carry a physical UDI marking themselves) are contained in a cartridge which is packaged inside a container, which does carry a labelled UDI.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "uou udi-di"
+        },
+        {
+          "term": "unit pack Unique Identifier",
+          "abbreviation": "upUI",
+          "definition": "A unique, alphanumeric, code placed on tobacco product packaging to track and trace per the EU regulation.",
+          "links": [
+            {
+              "url": "https://eur-lex.europa.eu/eli/reg_impl/2018/574/oj",
+              "label": "EU tobacco regulation 2018/574"
+            }
+          ],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "upui"
+        },
+        {
+          "term": "UPC-A barcode",
+          "definition": "A barcode of the EAN/UPC symbology that encodes GTIN-12 and RCN-12.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "upc-a_barcode",
+          "img": "glossaryImages:UPC-A.svg"
+        },
+        {
+          "term": "UPC-E barcode",
+          "definition": "A barcode of the EAN/UPC symbology representing a GTIN-12 in six explicitly encoded digits using zero-suppression.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "upc-e_barcode",
+          "img": "glossaryImages:UPC-E.svg"
+        },
+        {
+          "term": "variable measure number",
+          "abbreviation": "VMN",
+          "definition": "Deprecated in favour of: Restricted Circulation Number (RCN)",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "vmn"
+        },
+        {
+          "term": "variable measure trade item",
+          "definition": "A trade item which may be traded without a predefined measure, such as its weight or length.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "variable_measure_trade_item",
+          "img": "glossaryImages:Cheese-Variable-measure.svg"
+        },
+        {
+          "term": "version control",
+          "definition": "The management of different versions of the same entity.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "version_control"
+        },
+        {
+          "term": "Version Control Number",
+          "abbreviation": "VCN",
+          "definition": "A GS1 identification key attribute to facilitate version control, where differentiation is required for multiple occurrences of the same identification used on the same AIDC media type. For example, to ensure only the latest occurrence of access controlled AIDC media is valid upon scanning, where multiple occurrences could present risks (e.g., lost ID badge).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "vcn"
+        },
+        {
+          "term": "virtual trade item assortment/bundle",
+          "definition": "Combinations of multiple (same or different) trade items that are not physically combined into a single trade item, but that are presented in selling environments as offers of combinations of multiple trade items (e.g., products or services).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "virtual_trade_item_assortment_bundle"
+        },
+        {
+          "term": "VMN-12",
+          "definition": "Deprecated in favour of: RCN-12",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "vmn-12"
+        },
+        {
+          "term": "VMN-13",
+          "definition": "Deprecated in favour of: RCN-13",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "vmn-13"
+        },
+        {
+          "term": "warranty",
+          "definition": "A guarantee or claim that a party makes.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "warranty"
+        },
+        {
+          "term": "web-based information",
+          "definition": "An approach to giving users access to additional information or services about trade items through their mobile device. It is the ability to retrieve additional information about the trade item through mobile devices or, in general, to link a trade item with trusted virtual information or services.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "web-based_information"
+        },
+        {
+          "term": "wide-to-narrow ratio",
+          "definition": "The ratio between the wide elements and the narrow elements in a barcode symbology such as ITF-14 that has two different element widths.",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "wide-to-narrow_ratio"
+        },
+        {
+          "term": "X-dimension",
+          "definition": "The specified width of the narrowest element of a barcode (see module).",
+          "links": [],
+          "examples": [],
+          "crossRefs": [],
+          "date": "2026-05-28",
+          "sourceName": "GS1 General Specifications",
+          "sourceURL": "https://ref.gs1.org/standards/genspecs",
+          "id": "x-dimension",
+          "img": "glossaryImages:QR_Code-interactive.svg?show=x-dimension",
+          "isPartOf": [
+            "2d"
+          ]
+        }
+      ]
+    }
+    
+  ]
+}
