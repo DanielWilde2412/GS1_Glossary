@@ -69,12 +69,12 @@
       "sourceName": "GS1 Gen Specs glossary",
       "extractedGlossaryData": [
         {
-          "term": "acceptance criteria",
+          "term": "acceptance criteria - TEST",
           "definition": "An allowance for a small measurement variation between commercial verifiers or operators during barcode verification testing.",
           "links": [],
           "examples": [],
           "crossRefs": [],
-          "date": "2026-11-24",
+          "date": "2026-11-25",
           "sourceName": "GS1 General Specifications",
           "sourceURL": "https://ref.gs1.org/standards/genspecs",
           "id": "acceptance_criteria"
