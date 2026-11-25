@@ -687,11 +687,11 @@
         },
         {
           "term": "Data element value",
-          "definition": "The characters that comprise a data element (e.g., ABC123, 220708, 117 Hopkins Street).",
+          "definition": "The characters that comprise a data element (e.g., ABC123, 220708, 117 Jon Hopkins Street).",
           "links": [],
           "examples": [],
           "crossRefs": [],
-          "date": "2026-05-28",
+          "date": "2026-11-25",
           "sourceName": "GS1 General Specifications",
           "sourceURL": "https://ref.gs1.org/standards/genspecs",
           "id": "data_element_value"
