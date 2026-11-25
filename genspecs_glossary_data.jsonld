@@ -566,11 +566,11 @@
         },
         {
           "term": "country subdivision",
-          "definition": "Principle administrative divisions, or similar areas, of a country included in ISO 3166-1. Examples are a state in the US, a region in France, a canton in Switzerland.",
+          "definition": "Principal administrative divisions, or similar areas, of a country included in ISO 3166-1. Examples are a state in the US, a region in France, a canton in Switzerland.",
           "links": [],
           "examples": [],
           "crossRefs": [],
-          "date": "2026-05-28",
+          "date": "2026-11-25",
           "sourceName": "GS1 General Specifications",
           "sourceURL": "https://ref.gs1.org/standards/genspecs",
           "id": "country_subdivision"
